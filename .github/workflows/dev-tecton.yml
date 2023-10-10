@@ -21,7 +21,6 @@ jobs:
   apply:
     needs: [plan]
     runs-on: ubuntu-latest
-    if: github.event.ref == 'refs/heads/dev'
     environment: 
       name: Development
     steps:
